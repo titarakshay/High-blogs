@@ -1,0 +1,21 @@
+
+    <%- include("partials/header") -%>
+    <div class="form-body">
+        <h2 class="create-heading">Edit An Article</h2>
+        <div class="form">
+            <form action="" method="POST">
+                <input class="form-title" type="text" name="title" id="" placeholder="Title" value="<%=articles.title%>">
+            <textarea name="content" id="" cols="140" rows="18" placeholder="Write your article"><%=articles.content%></textarea>
+            <input class="form-tags" type="text" name="tags" id="" placeholder="#Tags" value="<%=articles.tags%>">
+            <button class="form-button" type="submit">Update</button>
+                <div class="anchor-div">
+
+                    <a class="anchor" href="/articles/<%=articles.id%>">Back</a>
+                    <a class="anchor" href="/articles">HOME</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

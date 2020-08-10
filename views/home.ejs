@@ -1,0 +1,24 @@
+<%- include('partials/header') -%>
+<div class="container">
+    <div class="name-logout">
+        <span ><%= userInfo.name%></span>
+        <a href="/users/logout">Log out</a>
+    </div>
+    <div class="anchor">
+        <a href="/articles/new">Create An Article</a>
+        <a href="/articles/myarticles">Show My Articles</a>
+    </div>
+    <% if(msg) {%>
+        <h2><%= msg%></h2>
+    <%}%>
+    <div class="list">
+        <% articles.map(article =>{ %>
+        <h3> <a class="title" href="/articles/<%=article.id%>"><i
+                    class="fas fa-angle-double-right"></i><%= article.title %></a></h3>
+        <%})%>
+    </div>
+    
+</div>
+</body>
+
+</html>

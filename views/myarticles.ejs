@@ -1,0 +1,7 @@
+<%- include("partials/header")-%>
+<div class="list">
+    <% articles.forEach(a=>{%>
+    <h3> <a class="title" href="/articles/<%=a.id%>"><i class="fas fa-angle-double-right"></i><%= a.title %></a></h3>
+    <%})%>
+</div>
+<a href="/articles">Home</a>

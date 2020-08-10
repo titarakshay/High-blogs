@@ -1,0 +1,15 @@
+<%- include('partials/header')-%>
+<div class="login-div">
+<h2>Create A New User</h2>
+<form action="/users/register" method="post">
+    <input type="text" name="name" id="" placeholder="Enter Your Name">
+    <input type="email" name="email" id="" placeholder="Enter Your Email">
+    <input type="password" name="password" id="" placeholder="Enter Your Password">
+    <% if(msg) {%>
+        <h2><%= msg%></h2>
+    <%}%>
+    <button type="submit">Create</button>
+    <button type="reset">Reset</button>
+    <a class="Home-Register" href="/">Home</a>
+</form>
+</div>

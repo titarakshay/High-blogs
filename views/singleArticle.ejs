@@ -1,0 +1,63 @@
+<%- include('partials/header') -%>
+<head>
+
+    <title>ArticleDetails</title>
+</head>
+<div class="container">
+    <% if(msg){ %>
+        <h2> <%= msg %> </h2>  
+     <%}%>
+    <div class="anchor-div">
+
+        <div class="name-logout">
+            <span ><%= userInfo.name%></span>
+        </div>
+        <div class="edit-delete">
+            <a class="anchor" href="/users/logout">Log out</a>
+
+            <% if(articles.userId == userInfo.id) { %>
+            <a class="anchor" href="/articles/<%=articles.id%>/delete">Delete</a>
+            <% } %>
+
+        </div>
+    </div>
+    <h3 class="title-heading"><i class="fas fa-bookmark"></i></i><%=articles.title%></h3>
+    <h3 class="author"><i class="fas fa-pen-alt"></i><%=articles.author%></h3>
+    <div class="img-div">
+
+        <img class="article-img" src="/uploads/<%=articles.media%>" alt="" />
+    </div>
+    <h3 class="content"><a href="/articles/<%=articles.id%>/edit"><i class="fas fa-edit"></i></a>
+        <div class="content-div">
+            <%=articles.content%>
+        </div>
+    </h3>
+    <h3 class="likes"><a href="/articles/<%=articles.id%>/like"><i class="fas fa-thumbs-up"></i><%=articles.likes%></a>
+    </h3>
+    <p class="tags"><i class="fas fa-paperclip"></i><%=articles.tags%></p>
+    <div class="comments">
+        <h2><i class="fas fa-comments"></i>Comments</h2>
+        <form class="comment-form" action="/articles/<%=articles.id%>" method="POST">
+            <input type="text" name="content" id="" placeholder="Write a comment">
+        </form>
+        <div>
+
+            <% articles.comments.map(c=>{ %>
+            <h5>User:<%= c.author%></h5>
+            <div class="content-comments">
+                <span><%=c.content%></span>
+                <% if(c.userId == userInfo.id) { %>
+                    <a class="edit-comment" href="/comments/<%=c.id%>/edit">Edit</a>
+                    <% } %>
+                <% if(c.userId == userInfo.id) { %>
+                <a class="delete-comment" href="/comments/<%=c.id%>/delete"><i class="fas fa-trash"></i></a>
+                <% } %>
+                <a class="comment-like" href="/comments/<%=c.id%>/like"><i class="fas fa-thumbs-up"></i><%=c.likes%></a>
+            </div>
+            <%})%>
+
+        </div>
+    </div>
+
+</div>
+<%- include('partials/footer') -%>

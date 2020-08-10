@@ -1,0 +1,9 @@
+
+    <%- include('partials/header') -%>
+    <form class="comment-form" action="/comments/<%= comment.id%>" method="POST">
+        <input type="text" name="content" id="" placeholder="Write a comment" value="<%=comment.content%>">
+        <button type="submit">Update</button>
+        
+    </form>
+</body>
+</html>

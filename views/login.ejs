@@ -1,0 +1,17 @@
+<%- include("partials/header")-%>
+<div class="login-div">
+    <form action="/users/login" method="post">
+        <h2 class="login-heading">User Login</h2>
+        <input type="email" name="email" id="" placeholder="Enter Your Email">
+        <input type="password" name="password" id="" placeholder="Enter Your Password">
+        <% if(msg){ %>
+        <h2> <%= msg %> </h2>
+        <%}%>
+    <button type="submit">Login</button>
+    <button type="reset">Reset</button>
+    <a class="Home-Register" href="/users/register">Register</a>
+    <a class="anchor" href="/auth/github">Github</a>
+    <a class="anchor" href="/auth/google">Google</a>
+
+</form>
+</div>

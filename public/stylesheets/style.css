@@ -1,0 +1,329 @@
+body {
+  /* padding: 50px; */
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300 !important;
+}
+.weight{
+  font-weight: 300;
+}
+.container{
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+a {
+  /* color: #00B7FF; */
+  list-style: none;
+  text-decoration: none;
+  color: none;
+}
+a:visited{
+  color: blue;
+}
+.header{
+  background-color: black;
+  font-size: 18px;
+  color: white;
+}
+.header a:visited{
+  color: white;
+}
+.high{
+  margin-left:40px ;
+}
+.list{
+  margin: 50px 0;
+
+}
+
+.title{
+  color: blue;
+  font-size: 40px;
+  margin: 24px 0;
+}
+.fab{
+  color: red;
+  font-size: 56px;
+}
+.anchor{
+  /* border: 1px solid black; */
+  display: inline-block;
+  padding: 8px;
+  font-size: 20px;
+}
+.fas{
+  font-size: 26px;
+  margin-right: 8px;
+  color: red;
+}
+
+.title-heading{
+   font-size: 48px;
+   margin:10px 50px;
+}
+.title-heading .fas{
+  font-size: 40px;
+  margin-right: 20px;
+  color: goldenrod;
+}
+.author{
+  font-size: 24px;
+  margin:0 100px;
+  font-weight: 300;
+  color: rgb(71, 69, 69);
+}
+.author .fas{
+  margin-right: 16px;
+  font-size: 20px;
+}
+.content{
+  display: flex;
+  justify-content: start;
+  margin: 30px 12px;
+  
+}
+.content .fas{
+  color: black;
+  font-size: 30px;
+}
+.content-div{
+  margin-left: 10px;
+  font-size: 22px;
+  padding: 16px;
+  font-weight: 300;
+  border: 1px solid gainsboro;
+  box-shadow: 5px 5px 10px grey;
+  background-color: honeydew;
+  letter-spacing: 1.1px;
+  width: 1060px;
+}
+.tags{
+  font-size: 22px;
+  margin: 20px 0;
+}
+.tags .fas{
+  font-size: 30px;
+  color: rgb(100, 223, 52);
+  margin-right: 30px;
+}
+.likes{
+  font-size: 30px;
+  text-align: right;
+  margin: 20px 100px; 
+}
+.likes .fas{
+  color: blue;
+  font-size: 36px;
+}
+.form-title{
+  width: 1160px;
+  padding: 12px;
+  display: block;
+  margin:16px 0;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 36px;
+}
+.form-tags{
+  width: 786px;
+  padding: 12px;
+  display: block;
+  margin:16px 0;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 24px;
+}
+.form textarea::placeholder{
+ font-size: 20px;
+}
+.form-button{
+  margin-top: 36px;
+  font-size: 20px;
+  border-radius: 30px;
+  background-color: transparent;
+  color: blue;
+  border: 1px solid black;
+  margin-left: 24px;
+  padding: 12px;
+}
+.create-heading{
+  font-size: 50px;
+  color: red;
+}
+.form-body{
+  text-align: center;
+}
+.form  input::placeholder {
+  font-size: 22px;
+  color: black;
+}
+.form textarea{
+  width: 1160px;
+  padding: 12px;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.form{
+  max-width: 1260px;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 20px;
+  display: inline-block;
+}
+.anchor-div .anchor{
+  color: red;
+  margin-right: 12px;
+  margin-top: 12px;
+  font-weight: 500;
+}
+.comments  {
+ font-size:24px;
+ border:  4px solid goldenrod;
+ padding: 20px 60px;
+ display: inline-block;
+ margin: 20px;
+}
+.comments span, a{
+  margin-right: 12px;
+ 
+}
+.comments h2 .fas{
+  font-size: 34px;
+  color:rgb(204, 27, 51);
+}
+.comments span{
+  font-size: 24px;
+}
+
+.comment-form{
+  margin: 20px;
+}
+
+.comment-form input{
+  font-size: 22px;
+  padding: 4px;
+  width: 500px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 36px;
+  outline: none;
+}
+
+.edit-comment{
+  font-size: 16px;
+  margin-top: 10px; 
+}
+
+.delete-comment .fas{
+  font-size: 16px;
+  color: rgb(253, 64, 17); 
+}
+.content-comments{
+  display: grid;
+  grid-template-columns: 15fr 1fr 1fr 1fr;
+  grid-gap: 25px 10px;
+
+}
+.comment-like .fas{
+  color: blue;
+  font-size: 18px;
+}
+.comment-like a{
+  font-size: 18px;
+}
+.anchor-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.anchor2 .fas{
+  font-size: 36px;
+  margin-top: 20px;
+}
+.back-top{
+  position: fixed;
+  right:20px;
+  bottom: 20px;
+}
+
+.back-top .fas{
+  font-size: 40px;
+  color:  white;
+  border: 2px solid black;
+  background-color: red;
+  border-radius: 50%;
+  padding: 16px;
+  font-weight: 900;
+}
+.register-form{
+  border: 1px solid black;
+  padding: 16px;
+  display: inline-block;
+
+}
+
+.login-div{
+  width: 40%;
+  margin: 0 auto;
+  border:1px solid #bbbbbb ;
+  text-align: center;
+margin-top: 4rem;
+}
+
+.login-div input{
+  width: 80%;
+  margin: 0 auto;
+  padding: 14px 20px;
+  font-size: 18px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: block;
+  outline: none;
+
+}
+.login-div
+button{
+  font-size: 16px;
+  padding: 5px 8px;
+  margin-bottom: 34px;
+cursor: pointer;
+}
+.login-heading{
+  font-size: 28px;
+  padding: 3rem 0;
+  color: #1d1c1c;
+}
+.name-logout{
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+.name-logout span {
+  color: red;
+  font-size: 36px;
+  text-transform: capitalize;
+}
+
+.Home-Register{
+  border: 1px solid gray;
+  padding: 6px;
+  font-size: 18px;
+  background-color:#F6F6F6;
+  border-radius: 10px;
+  margin-left: 8px;
+}
+
+.article-img{
+  width: 400px;
+  height: 200px;
+}
+
+.img-div img{
+  width: 200px;
+  height: 200px;
+}
